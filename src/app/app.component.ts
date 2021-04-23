@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TN-CoronaUpdate';
+  title = 'Covid-19 Update In India';
+
+  year: number = new Date().getFullYear();
 }

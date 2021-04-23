@@ -1,0 +1,44 @@
+<div class="container">
+<div class="row row-cols-1 row-cols-xl-3 g-4 mb-4">
+    <div class="col-sm">
+        <div class="card war shadow">
+            <div class="card-header font-weight-bold bg-transparent border-warning">Infected</div>
+            <div class="card-body text-warning">
+                <h5 style="font-weight: bold;cursor: pointer;" class="card-title" [countUp]="dis[0].confirmed"
+                    *ngFor="let dis of display">0</h5>
+                <p class="card-text">Total Number Of Infected Cases In Covid-19.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" *ngFor="let dis of display">Last Updated {{ dis[0].lastupdatedtime }}</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card suc shadow">
+            <div class="card-header font-weight-bold bg-transparent border-success">Recovered</div>
+            <div class="card-body text-success">
+                <h5 style="font-weight: bold;cursor: pointer;" class="card-title" [countUp]="dis[0].recovered"
+                    *ngFor="let dis of display">0</h5>
+                <p class="card-text">Total Number Of Recoveries From Covid-19 .
+                </p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" *ngFor="let dis of display">Last Updated {{ dis[0].lastupdatedtime }}</small>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="card dan h-100 shadow">
+            <div class="card-header font-weight-bold bg-transparent border-danger">Deaths</div>
+            <div class="card-body text-danger">
+                <h5 style="font-weight: bold;cursor: pointer;" class="card-title" [countUp]="dis[0].deaths" *ngFor="let dis of display">
+                    0</h5>
+                <p class="card-text">Total Number Of Deaths By Covid-19.</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted" *ngFor="let dis of display">Last Updated {{ dis[0].lastupdatedtime }}</small>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

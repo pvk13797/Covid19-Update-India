@@ -1,0 +1,17 @@
+@media (max-width: 426px) {
+    .card {
+        margin-bottom: 10px !important;
+    }
+}
+
+.war {
+    border-bottom: 8px solid orange;
+}
+
+.suc {
+    border-bottom: 8px solid green;
+}
+
+.dan {
+    border-bottom: 8px solid red;
+}
