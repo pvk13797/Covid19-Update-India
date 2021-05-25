@@ -26,7 +26,7 @@ export class CardsComponent implements OnInit {
       for(let key in data)
         if(key === 'statewise')
           this.counts = data[key];
-          this.list = this.counts.slice(1, this.counts.length -1 );
+          this.list = this.counts.slice(1);
           // console.log(this.list);
     });
   }
